@@ -20,7 +20,7 @@ for (var i = 1; i <= 8; i++) {
 setInterval(function () { 
 	 img_idx = Math.ceil(Math.random()*8);
 	 console.log(img_idx);
-	$('.milos img').attr('src', 'ricardo/ricardo'+img_idx+'.png');
+	$('.milos img').attr('src', 'ricardo'+img_idx+'.png');
 }, 1000);
 
 });
