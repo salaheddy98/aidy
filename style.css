@@ -1,0 +1,268 @@
+body{
+	margin:0px;
+	padding:0px;
+	font-family: "Lucida Handwriting", sans-serif;
+}
+
+.bg{
+	position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	background: linear-gradient(to bottom, #000, #0A0A2D, #080842, #05056D);	
+}
+.moon{
+	width: 80px;
+	height: 80px;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 60px;
+	right: 180px;
+}
+.moon::before{
+	content: "";
+	width: 80px;
+	height: 80px;
+	background: linear-gradient(to bottom, #000, #0A0A2D);
+	border-radius: 50%;
+	position: absolute;	
+	top: -7px;
+	right: 5px;
+}
+.heart1 {
+	position: absolute;    
+	bottom: 150px;    
+	right: 250px;    
+	background-color: #FAFA93;
+	height: 50px;
+	width: 50px;
+	transform: rotate(-45deg);	
+	animation-name: beat;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	
+}
+.heart1::after {
+	background-color: #FAFA93;
+	content: "";
+	border-radius: 50%;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 0px;
+	left: 25px;	
+}
+.heart1::before {
+	background-color: #FAFA93;
+	content: "";
+	border-radius: 50%;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: -25px;
+	left: 0px;
+}
+.heart2 {
+	position: absolute;    
+	bottom: 130px;    
+	right: 650px;    
+	background-color: #E5E5E5;
+	height: 50px;
+	width: 50px;
+	transform: rotate(-45deg);
+	animation-name: beat;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+.heart2::after {
+	background-color: #E5E5E5;
+	content: "";
+	border-radius: 50%;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 0px;
+	left: 25px;
+}
+.heart2::before {
+	background-color: #E5E5E5;
+	content: "";
+	border-radius: 50%;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: -25px;
+	left: 0px;
+}
+@keyframes beat {
+    0% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(0.9) rotate(-45deg);
+    }
+  }
+.heart3 {
+	position: absolute;    
+	bottom: 170px;    
+	right: 450px;    
+	background-color: pink;
+	height: 50px;
+	width: 50px;
+	transform: rotate(-45deg);	
+	animation-name: up_down;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+.heart3::after {
+	background-color: pink;
+	content: "";
+	border-radius: 50%;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 0px;
+	left: 25px;
+}
+.heart3::before {
+	background-color: pink;
+	content: "";
+	border-radius: 50%;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: -25px;
+	left: 0px;
+}
+@keyframes up_down {
+	50%{
+		bottom: 160px;
+	}
+	100%{
+		bottom: 180px;  
+	}
+}
+.stars{
+	position: absolute;	
+	background: #fff;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;	
+}
+.star1,.star26,.star24,.star29,.star2{
+	animation-name: twinkle-1;
+	animation-duration: 1ms;
+	animation-iteration-count: infinite;
+}
+.star22,.star23,.star4,.star6,.star7,.star12{
+	animation-name: twinkle-2;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+.star18{
+	animation-name: twinkle-3;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+.star11{
+	animation-name: twinkle-4;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+.star16{
+	animation-name: twinkle-5;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes twinkle-1 {    
+	50% {
+	  transform: scale(2);
+	}
+}
+@keyframes twinkle-2 {    
+	23% {
+	  transform: scale(2.5);
+	}
+}
+@keyframes twinkle-3 {    
+	77% {
+	  transform: scale(2.5);
+	}
+}
+@keyframes twinkle-4 {    
+	33% {
+	  transform: scale(2.5);
+	}
+}
+@keyframes twinkle-5 {    
+	10% {
+	  transform: scale(2.5);
+	}
+}
+
+
+.eid_label h1 {
+	color:#E5E5E4;
+	position: absolute;
+	top:280px;
+	left:499px;
+	font-size: 3.3em;
+}
+
+@media (max-width:759px){
+	.eid_label h1 {
+		color:#E5E5E4;
+		position: absolute;
+		top:300px;
+		left:200px;
+		font-size: 3.3em;
+	}
+	.heart1 {
+		position: absolute;    
+		bottom: 80px;
+		right: 130px;
+	}
+	.heart2 {
+		position: absolute;    
+		bottom: 230px;
+		right: 50px;
+	}
+	.heart3 {
+		position: absolute;    
+		bottom: 200px;
+		right: 400px;
+	}
+
+}
+.milos {
+	width :60%;	
+	z-index: 99999;	
+	width:50%;
+	margin: 5% auto;	
+}
+.milos img{
+	max-width :100%;	
+	display: flex;
+    justify-content: center;
+    align-items: center; 
+	height :auto;
+	opacity: 0.7;
+	animation-name: gotthat;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0,0.5,0.7,1);
+	animation-fill-mode: forwards;
+}
+@keyframes gotthat {
+	30%{
+		transform: scale(1.3);
+	}	
+	100%{
+		opacity: 0;
+	}
+}
