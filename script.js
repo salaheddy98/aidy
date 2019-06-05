@@ -14,9 +14,6 @@ for (var i = 0; i < $('.stars').length; i++) {
 	$('.star'+i).css('left',left);
 }
 let img_idx = 0;
-for (var i = 1; i <= 8; i++) {
-		
-}
 setInterval(function () { 
 	 img_idx = Math.ceil(Math.random()*8);
 	 console.log(img_idx);
